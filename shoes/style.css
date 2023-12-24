@@ -1,0 +1,348 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    background-color: #03080e;
+    color: white;
+    padding: 10px 90px;
+    font-size: 18px;
+  }
+
+  .navTop {
+    color: aqua;
+    margin-right: 550px;
+  }
+
+  
+  .menuItem {
+    margin-right: 70px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .slider {
+    background: url("https://i.pinimg.com/564x/1e/a4/94/1ea494d7192c882de2b2ac2bb1da77d5.jpg");
+    overflow: hidden;
+    height: 900px;
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
+  }
+  
+  .sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .sliderBg {
+    margin-top: 60px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .sliderImg {
+    width: 900px;
+    z-index: 1;
+  }
+  
+  .sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .buyButton {
+    position: absolute;
+    top: 70%;
+    right: 11%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .buyButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .sliderItem:nth-child(1) .sliderBg {
+    background-color: #0c2416;
+    box-shadow: 2px 2px 20px rgb(0, 255, 72);
+  }
+  .sliderItem:nth-child(2) .sliderBg {
+    background-color: rgb(30, 10, 43);
+    box-shadow: 2px 2px 20px rgb(255, 0, 255);
+  }
+  .sliderItem:nth-child(3) .sliderBg {
+    background-color: rgb(51, 1, 1);
+    box-shadow: 2px 2px 20px rgb(255, 0, 0);
+  }
+  .sliderItem:nth-child(4) .sliderBg {
+    background-color: rgb(13, 22, 41);
+    box-shadow: 2px 2px 20px rgb(0, 191, 255);
+  }
+  .sliderItem:nth-child(5) .sliderBg {
+    background-color: rgb(55, 1, 1);
+    box-shadow: 2px 2px 20px rgb(255, 0, 0);
+  }
+  
+  .sliderItem:nth-child(1) .sliderPrice {
+    color: #369e62;
+  }
+  .sliderItem:nth-child(2) .sliderPrice {
+    color: rgb(212, 105, 166);
+  }
+  .sliderItem:nth-child(3) .sliderPrice {
+    color: rgb(128, 0, 0);
+  }
+  .sliderItem:nth-child(4) .sliderPrice {
+    color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .sliderPrice {
+    color: rgb(128, 0, 0);
+  }
+  
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+  
+  .product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .payment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .payTitle {
+    font-size: 20px;
+    color: lightgray;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .payInput::placeholder {
+    color: rgb(163, 163, 163);
+  }
+  
+  .cardIcons {
+    display: flex;
+  }
+  
+  .cardIcon {
+    margin-right: 10px;
+  }
+  
+  .cardInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sm {
+    width: 30%;
+  }
+  
+  .payButton {
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+  }
+
+  .productPrice {
+    color: rgb(0, 0, 0);
+  }
+  
+  .productImg {
+    width: 50%;
+  }
+  
+  .productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+  }
+  
+  .productTitle {
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    font-weight: 900;
+  }
+  
+  .productDesc {
+    font-style: 24px;
+    color: gray;
+  }
+  
+  .colors,
+  .sizes {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .size {
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .productButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .productButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  .gallery {
+    padding: 50px;
+    display: flex;
+  }
+  
+  .galleryItem {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .galleryImg {
+    width: 100%;
+  }
+  
+  .newSeason {
+    display: flex;
+  }
+  
+  .nsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
