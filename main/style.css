@@ -47,7 +47,7 @@
 }
 
 .section__container {
-  max-width: var(--max-width);
+  max-width: 1500px;
   margin: auto;
   padding: 5rem 1rem;
 }
@@ -187,7 +187,7 @@ nav {
 .header__tag {
   position: absolute;
   bottom: 10rem;
-  left: 40%;
+  left: 30%;
   transform: translateX(-150%);
   padding: 1rem 1.5rem;
   font-size: 1rem;
